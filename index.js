@@ -46,13 +46,21 @@ const stopCheckbox = document.getElementById("stopCheckbox")
 
 
 let currentIndex = 0 //position of the index in the updateBackgroundColor function below 
-
+/*
 function assignBackgroundColor(){
     const colorValue = colours[currentIndex].value
     colorDiv.style.backgroundColor = colorValue
     currentIndex = (currentIndex + 1) % colours.length // incrementing the the currentIndex by 1 in the array
 
 }
+*/
+const assignBackgroundColor = () => {
+	const colorValue = colours[currentIndex].value
+	colorDiv.style.backgroundColor = colorValue
+	currentIndex = (currentIndex + 1) % colours.length
+};
+
+
 
 let intervalColor = setInterval(assignBackgroundColor, 1000)
 
